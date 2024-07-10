@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -ex
+
+# This is the master script for the capsule. When you click "Reproducible Run", the code in this file will execute.
+python -u MoS2_latent_space_plot_pred.py "$@"
+python -u NN_multiple_GW_pred.py "$@"
