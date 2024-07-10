@@ -20,7 +20,7 @@ conda create -n gpaw python=3.9.5 -y
 conda activate gpaw
 conda install numpy=1.22.0 -c conda-forge
 conda install scipy -y
-conda install ase -c conda-forge -y
+conda install -c conda-forge ase=3.22.1 -y
 conda install libxc=4.3.4 -c conda-forge -y
 conda install gpaw -c conda-forge -y
 conda install h5py
