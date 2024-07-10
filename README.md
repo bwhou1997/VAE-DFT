@@ -45,4 +45,5 @@ The CUDA devices can be checked by `nvidia-smi`.
 
 # Demo
 
-- Unzip data.zip
+- Following instruction in `./model/run`
+- You should expect to see files in `./output`

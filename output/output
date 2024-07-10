@@ -1,0 +1,26 @@
++ python -u MoS2_latent_space_plot_pred.py
+plotting figures-20
+plotting figures-21
+plotting figures-22
+plotting figures-23
+plotting figures-24
+plotting figures-25
+plotting figures-26
+plotting figures-27
+plotting figures-28
+plotting figures-29
+plotting figures-30
+plotting figures-31
+plotting figures-32
+plotting figures-33
+plotting figures-34
+plotting figures-35
+plotting figures-36
+plotting figures-37
+plotting figures-38
+plotting figures-39
+start tsne
+start plotting
++ python -u NN_multiple_GW_pred.py
+Using device: cpu
+GW bandstructures saved!
