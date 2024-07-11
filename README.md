@@ -47,3 +47,4 @@ The CUDA devices can be checked by `nvidia-smi`.
 
 - Following instruction in `./model/run`
 - You should expect to see files in `./output`
+- Data accessibility: `Submission Pending on Materials Data Facilities`
