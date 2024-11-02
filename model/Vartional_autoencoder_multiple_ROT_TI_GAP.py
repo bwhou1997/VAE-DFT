@@ -33,11 +33,13 @@ class RotationalConv2d(nn.Module):
         return x_combined
 
 
+
 class VAE(nn.Module):
     def __init__(self, latent_dim=60):
         super(VAE, self).__init__()
         self.encoder = nn.Sequential(
             RotationalConv2d(40, 480, kernel_size=3, padding=1, padding_mode='circular'), # Adjust parameters as needed
+            # Comment: the performance of VAE will increase obviously when increasing kernel_size, try using 3, 5, 7,...
             nn.ReLU(),
             nn.MaxPool2d(2, 2),
             nn.Conv2d(480, 480, kernel_size=3, padding=1, padding_mode='circular'),

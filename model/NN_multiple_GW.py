@@ -221,21 +221,6 @@ if __name__ == "__main__":
     # print('X_test size:', X_test.shape)
     # print('y_test size:', y_test.shape)
 
-    ####### get rid of bad points:
-    # print('\nnumber of GW energies:', total_samples)
-    # bad_points_imported = np.array([])
-    # if os.path.isfile('bad_point.txt'):
-    #     bad_points_imported = np.loadtxt('bad_point.txt').astype(int)
-    # print('Bad points number from Train set:', len(bad_points_imported))
-
-    # indices_to_keep = np.array([i for i in range(X_train_raw.shape[0]) if i not in bad_points_imported])
-
-    # X_train = X_train_raw[indices_to_keep]
-    # y_train = y_train_raw[indices_to_keep]
-    # print('number of train set:', len(y_train))
-
-
-    #################################
 
 
 #### here, I comment below
@@ -334,9 +319,4 @@ if __name__ == "__main__":
     print('GW MAE:',np.mean(np.sqrt(test_error[-1000:])))
     print('R2:',np.mean((1 - test_error / var_test)[-1000:]))
 
-    
-    # if len(bad_points_imported) == 0:
-    #     tolerance = 0.7 # eV
-    #     bad_point = np.where(abs(outputs_train[:,0] - targets_train) > tolerance)[0]
-    #     print('number of bad points:', len(bad_point))
-    #     np.savetxt('bad_point.txt',bad_point.astype('int'),fmt='%s')
+    # 11/02/2024: it seems outlier doesn't affect prediction too much. 
